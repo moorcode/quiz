@@ -6,3 +6,33 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
+.center{
+  text-align: center;
+}
+
+.card{
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 50px;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+li{
+  list-style: none;
+}
+
+.answers{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  order: ;
+  margin: 10px;
+}
