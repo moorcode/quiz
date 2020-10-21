@@ -6,33 +6,128 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
-.center{
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Teko&display=swap');
+
+.body{
+  background-color: #f8f6f0;
+}
+
+h1{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 50px;
+}
+
+h2{
   text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+}
+section, form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card{
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
   height: auto;
   margin: 0 auto;
   border: 2px solid black;
-  padding: 50px;
+  box-shadow: 5px 10px 18px #888888;
+  padding: 25px;
 }
 
 ul{
   display: flex;
   justify-content: space-between;
-  margin: 30px;
+  padding: 0;
+  order:2;
 }
 li{
   list-style: none;
+  /* border: 1px solid black;
+  padding: 5px;
+  background-color: rgb(19, 109, 42);
+  color: #f8f6f0; */
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Teko', sans-serif;
+  
+  
 }
 
-.answers{
+.answers {
   display: flex;
-  flex-direction: column;
+  margin: 10px; 
 }
 
 input{
-  order: ;
-  margin: 10px;
+  order:-1;
+  align-self: center;
+  margin-right: 10px;
+}
+
+input:hover{
+  color: rgb(19, 109, 42);
+  font-size: 30px;
+}
+
+label{
+  align-self: center;
+}
+
+button{
+  margin: 30px auto;
+  width: 100px;
+  height: 35px;
+  justify-self: center;
+  background-color: rgb(19, 109, 42);
+  box-shadow: 3px 2px 2px #888888;
+  color: #f8f6f0;
+  font-family: 'Teko', sans-serif;
+  font-size: 30px;
+}
+
+button:hover{
+  background-color: rgba(19, 109, 41, 0.89);
+}
+.center{
+  text-align: center;
+}
+
+.wrong{
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  border: 2px solid red;
+  box-shadow: 5px 10px 18px #888888;
+  padding: 25px;
+  text-align: center;
+}
+
+.right{
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  border: 2px solid green;
+  box-shadow: 5px 10px 18px #888888;
+  padding: 25px;
+  text-align: center;
+}
+
+@media (min-width: 666px){
+
+  body{
+    margin: 30px;
+  }
+  .card, .wrong, .right{
+    width: 500px;
+    height: 375px;
+  }
+  
 }
